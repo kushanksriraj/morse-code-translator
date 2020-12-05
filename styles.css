@@ -92,7 +92,7 @@ textarea::placeholder {
     margin: auto;
     min-height: 15vh;
     margin-top: 1vh;
-    padding: 5vh;
+    padding: 2vh 5vh;
     font-size: medium;
     font-weight: bold;
     /* border: 1px solid var(--primary-color); */
