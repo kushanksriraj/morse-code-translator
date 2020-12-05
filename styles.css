@@ -35,13 +35,13 @@ nav {
 
 main {
     max-width: 700px;
-    padding: 18vh 4vh;
+    padding: 15vh 4vh;
     margin: auto;
 }
 
 .label1 {
     font-size: medium;
-    /* font-weight: ; */
+    font-weight: normal;
 }
 
 #input-txt {
@@ -82,16 +82,17 @@ textarea::placeholder {
     width: 100%;
     margin: auto;
     min-height: 15vh;
-    margin-top: 10vh;
-    padding: 1vh;
+    margin-top: 1vh;
+    padding: 3vh;
     font-size: medium;
     font-weight: bold;
-    border: 1px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    border-radius: 3px;
+    /* border: 1px solid var(--primary-color); */
+    /* background-color: var(--secondary-color); */
+    /* border-radius: 3px; */
 }
 
 .label2 {
+    margin-top: 5vh;
     font-weight: lighter;
     font-size: 14px;
 }
