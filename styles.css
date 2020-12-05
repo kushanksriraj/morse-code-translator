@@ -140,3 +140,11 @@ footer a {
     font-weight: bold;
     color: var(--primary-color);
 }
+
+
+span {
+    padding: 0;
+    margin: 0;
+    color: #ff4d4d;
+    font-size: medium;
+}

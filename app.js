@@ -2,6 +2,7 @@ var inputTextRef = document.querySelector("#input-txt");
 var translateButtonRef = document.querySelector("#translate-btn");
 var outputTextRef = document.querySelector("#output-txt");
 var resetButtonRef = document.querySelector("#reset-btn");
+var errorMsgRef = document.querySelector("#errorMsg");
 
 
 const serverUrl = "https://api.funtranslations.com/translate/morse.json";
@@ -14,7 +15,13 @@ function constructUrl(text) {
 
 function errorHandler(error) {
     console.log(error);
-    outputTextRef.innerText = "ERROR! Please try again after some time.";
+    outputTextRef.innerText = "";
+    //create a new element
+    var span = document.createElement("span");
+    var node = document.createTextNode("ERROR! Please try again after some time.");
+    span.appendChild(node);
+    var element = document.getElementById("output-txt");
+    element.appendChild(span);
 }
 
 
