@@ -14,11 +14,12 @@ function constructUrl(text) {
 
 
 function errorHandler(error) {
+    alert("Some error occured!");
     console.log(error);
     outputTextRef.innerText = "";
     //create a new element
     var span = document.createElement("span");
-    var node = document.createTextNode("ERROR! Please try again after some time.");
+    var node = document.createTextNode("API rate limit might be exceeded. Try again after an hour.");
     span.appendChild(node);
     var element = document.getElementById("output-txt");
     element.appendChild(span);
