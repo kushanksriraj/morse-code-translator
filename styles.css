@@ -19,7 +19,7 @@ body {
     /* https://www.heropatterns.com/ */
     /* CC BY 4.0 */
     background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2339eb75' fill-opacity='0.36' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2301f1a1' fill-opacity='0.36' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 nav {
@@ -77,24 +77,24 @@ textarea::placeholder {
     background-color: var(--secondary-color);
 }
 
+.label2 {
+    margin-top: 5vh;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
 #output-txt {
     display: block;
     width: 100%;
     margin: auto;
     min-height: 15vh;
     margin-top: 1vh;
-    padding: 3vh;
+    padding: 5vh;
     font-size: medium;
     font-weight: bold;
     /* border: 1px solid var(--primary-color); */
     /* background-color: var(--secondary-color); */
     /* border-radius: 3px; */
-}
-
-.label2 {
-    margin-top: 5vh;
-    font-weight: lighter;
-    font-size: 14px;
 }
 
 
