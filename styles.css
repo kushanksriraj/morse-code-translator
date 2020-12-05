@@ -4,7 +4,7 @@
     --secondary-color: #050705d3;
     /* --primary-color: #20e655; */
     --primary-color: #01f1a1;
-    --off-green: #189b3b;
+    --off-green: #3d907e;
 }
 
 * {
@@ -40,8 +40,8 @@ main {
 }
 
 .label1 {
-    font-size: larger;
-    font-weight: lighter;
+    font-size: medium;
+    /* font-weight: ; */
 }
 
 #input-txt {
