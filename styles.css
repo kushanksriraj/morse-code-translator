@@ -102,8 +102,7 @@ textarea::placeholder {
 
 #reset-btn {
     display: block;
-    margin: auto;
-    margin-top: 1vh;
+    margin: 1vh auto;
     width: 80px;
     height: 35px;
     font-size: medium;
