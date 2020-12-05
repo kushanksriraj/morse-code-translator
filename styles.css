@@ -2,9 +2,7 @@
 
 :root {
     --secondary-color: #050705f8;
-    /* --secondary-color: #050705d3; */
     --primary-color: #01f1a1;
-    /* --primary-color: #e712e7; */
     --off-green: #3d907e;
 
     color: #1fffb4c2;
@@ -96,9 +94,6 @@ textarea::placeholder {
     font-size: x-large;
     font-weight: bold;
     text-align: center;
-    /* border: 1px solid var(--primary-color); */
-    /* background-color: var(--secondary-color); */
-    /* border-radius: 3px; */
 }
 
 
@@ -129,7 +124,6 @@ footer {
 
 footer div {
     font-size: larger;
-    /* margin: 0 1vh; */
     margin-top: 1vh;
 }
 

@@ -29,12 +29,11 @@ function translateClickEventHandler() {
             outputTextRef.innerText = translated;
         })
         .catch(errorHandler);
-
 }
 
 function resetClickEventHandler() {
     inputTextRef.value = "";
-    outputTextRef.innerText = "";
+    outputTextRef.innerText = "</>";
 }
 
 
