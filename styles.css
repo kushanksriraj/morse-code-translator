@@ -120,7 +120,7 @@ footer {
     text-align: center;
     bottom: 0;
     position: fixed;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     max-height: 15vh;
     border: 1px solid var(--primary-color);
     background-color: var(--secondary-color);
@@ -128,7 +128,8 @@ footer {
 
 footer div {
     font-size: larger;
-    margin: 1vh;
+    /* margin: 0 1vh; */
+    margin-top: 1vh;
 }
 
 footer p {
