@@ -2,7 +2,6 @@ var inputTextRef = document.querySelector("#input-txt");
 var translateButtonRef = document.querySelector("#translate-btn");
 var outputTextRef = document.querySelector("#output-txt");
 var resetButtonRef = document.querySelector("#reset-btn");
-var errorMsgRef = document.querySelector("#errorMsg");
 
 
 const serverUrl = "https://api.funtranslations.com/translate/morse.json";
