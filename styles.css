@@ -4,6 +4,7 @@
     --secondary-color: #050705f8;
     --primary-color: #01f1a1;
     --off-green: #3d907e;
+    --custom-font : 'Source Code Pro';
 }
 
 * {
@@ -13,7 +14,7 @@
 body {
     margin: 0;
     color: var(--primary-color);
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--custom-font), monospace;
 
     /* https://www.heropatterns.com/ */
     /* CC BY 4.0 */
@@ -51,7 +52,7 @@ main {
     padding: 1vh;
     font-size: medium;
     font-weight: bold;
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--custom-font), monospace;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 3px;
@@ -70,7 +71,7 @@ textarea::placeholder {
     height: 40px;
     font-size: medium;
     color: var(--primary-color);
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--custom-font), monospace;
     border: 1px solid var(--primary-color);
     border-radius: 3px;
     background-color: var(--secondary-color);
@@ -102,7 +103,7 @@ textarea::placeholder {
     height: 35px;
     font-size: medium;
     color: var(--primary-color);
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--custom-font), monospace;
     border: 1px solid var(--primary-color);
     border-radius: 3px;
     background-color: var(--secondary-color);
@@ -137,13 +138,4 @@ footer a {
     text-decoration: none;
     font-weight: bold;
     color: var(--primary-color);
-}
-
-
-span {
-    padding: 0;
-    margin: 0;
-    color: #fb1818;
-    font-size: medium;
-    font-weight: bold;
 }
