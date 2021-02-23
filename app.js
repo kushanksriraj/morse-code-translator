@@ -1,49 +1,45 @@
-var inputTextRef = document.querySelector("#input-txt");
-var translateButtonRef = document.querySelector("#translate-btn");
-var outputTextRef = document.querySelector("#output-txt");
-var resetButtonRef = document.querySelector("#reset-btn");
+const inputTextRef = document.querySelector("#input-txt");
+const translateButtonRef = document.querySelector("#translate-btn");
+const outputTextRef = document.querySelector("#output-txt");
+const resetButtonRef = document.querySelector("#reset-btn");
 
+const serverUrl = `https://api.funtranslations.com/translate/morse.json`;
 
-const serverUrl = "https://api.funtranslations.com/translate/morse.json";
+const constructUrl = text =>  {
 
-function constructUrl(text) {
-    var url = serverUrl + "?text=" + text;
+    const url = `${serverUrl}?text=${text}`;
     return encodeURI(url);
 }
 
-
-function errorHandler(error) {
+const errorHandler = error => {
     alert("Some error occured!");
     console.log(error);
     outputTextRef.innerText = "";
     //create a new element
-    var span = document.createElement("span");
-    var node = document.createTextNode("API rate limit might be exceeded. Try again after an hour.");
+    const span = document.createElement("span");
+    const node = document.createTextNode("API rate limit might be exceeded. Try again after an hour.");
     span.appendChild(node);
-    var element = document.getElementById("output-txt");
+    const element = document.getElementById("output-txt");
     element.appendChild(span);
 }
 
+const translateClickEventHandler = () => {
 
-function translateClickEventHandler() {
-
-    var inputText = inputTextRef.value;
+    const inputText = inputTextRef.value;
 
     fetch(constructUrl(inputText))
         .then(response => response.json())
         .then(json => {
-            var translated = json.contents.translated;
+            const translated = json.contents.translated;
             outputTextRef.innerText = translated;
         })
         .catch(errorHandler);
 }
 
-function resetClickEventHandler() {
+const resetClickEventHandler = () => {
     inputTextRef.value = "";
     outputTextRef.innerText = "</>";
 }
 
-
 translateButtonRef.addEventListener("click", translateClickEventHandler);
-
 resetButtonRef.addEventListener("click", resetClickEventHandler);
